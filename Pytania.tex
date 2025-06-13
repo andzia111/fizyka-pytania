@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{float}
+
+\geometry{
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=25mm,
+  bottom=25mm
+}
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+\renewcommand\thesection{}
+\renewcommand\thesubsection{\arabic{subsection}.}
+\titleformat{\subsection}
+  {\normalfont\small\bfseries}
+  {\thesubsection}{1em}{}
+
+\title{\bfseries Podstawy mechaniki kwantowej}
+\author{Pytania na kolokwium}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Lista 1}
+\input{Lista1}
+
+\section*{Lista 2}
+\input{Lista2}
+
+\end{document}
