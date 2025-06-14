@@ -44,20 +44,129 @@ odpowiedź
 
 \subsection{Klasy i własności operatorów. Komutatory}
 
-odpowiedź
+W mechanice kwantowej operatory reprezentują obserwowalne wielkości fizyczne, takie jak pozycja czy pęd. Operatory działają na przestrzeni stanów (np. w przestrzeni Hilberta) i mogą mieć różne własności: być hermitowskie (samosprzężone), jednostkowe czy projekcyjne. Hermitowskie operatory odpowiadają mierzalnym wartościom rzeczywistym.
+
+Klasa operatorów określa ich charakter (np. ograniczone, nieograniczone). Ważnym pojęciem są komutatory operatorów
+\[
+[A, B] = AB - BA.
+\]
+Jeśli
+\[
+[A, B] = 0,
+\]
+to operatory się komutują, co oznacza, że można jednocześnie mierzyć odpowiadające im wielkości z pełną precyzją. Niezerowy komutator wskazuje na fundamentalne ograniczenia pomiarowe, jak w przypadku zasady nieoznaczoności Heisenberga.
 
 \subsection{Zasada nieoznaczoności Heisenberga}
 
-odpowiedź
+Zasada nieoznaczoności Heisenberga wyraża fundamentalne ograniczenie precyzji, z jaką można jednocześnie znać wartości pewnych par wielkości fizycznych, np. położenia \( \hat{x} \) i pędu \( \hat{p} \). Formalnie wyraża się to nierównością
+
+\[
+\Delta x \, \Delta p \geq \frac{\hbar}{2},
+\]
+
+gdzie \( \Delta x \) i \( \Delta p \) to odchylenia standardowe pomiarów operatorów położenia i pędu, a \( \hbar \) to zredukowana stała Plancka.
+
+Ta zasada wynika z faktu, że operatory położenia i pędu nie komutują, tzn.
+
+\[
+[\hat{x}, \hat{p}] = i \hbar,
+\]
+
+co implikuje, że nie istnieje wspólny zbiór własnych wektorów obu operatorów, a więc nie można jednocześnie przypisać im dokładnych wartości.
 
 \subsection{Operator momentu pędu, uogólniony operator momentu pędu, operator spinu: własne funkcje i wartości}
 
-odpowiedź
+
+Operator momentu pędu \(\hat{\mathbf{L}} = (\hat{L}_x, \hat{L}_y, \hat{L}_z)\) opisuje moment pędu orbitalnego cząstki. Składowe operatora spełniają następujące relacje komutacyjne:
+
+\[
+[\hat{L}_i, \hat{L}_j] = i \hbar \epsilon_{ijk} \hat{L}_k,
+\]
+
+gdzie \(\epsilon_{ijk}\) to symbol Levi-Civity, a \(i, j, k \in \{x,y,z\}\).
+
+Operator kwadrat momentu pędu \(\hat{L}^2 = \hat{L}_x^2 + \hat{L}_y^2 + \hat{L}_z^2\) oraz składowa \(\hat{L}_z\) mają wspólny układ własnych funkcji \(|l, m\rangle\), dla których zachodzą własności:
+
+\[
+\hat{L}^2 |l, m\rangle = \hbar^2 l(l+1) |l, m\rangle, \quad \hat{L}_z |l, m\rangle = \hbar m |l, m\rangle,
+\]
+
+gdzie \(l = 0, 1, 2, \ldots\), a \(m = -l, -l+1, \ldots, l\).
+
+Uogólniony operator momentu pędu \(\hat{\mathbf{J}} = \hat{\mathbf{L}} + \hat{\mathbf{S}}\) łączy moment pędu orbitalny \(\hat{\mathbf{L}}\) oraz spin \(\hat{\mathbf{S}}\).
+
+Operator spinu \(\hat{\mathbf{S}}\) opisuje wewnętrzny moment pędu cząstek, niezwiązany z ruchem orbitalnym. Składowe spinu również spełniają relacje komutacyjne analogiczne do momentu pędu:
+
+\[
+[\hat{S}_i, \hat{S}_j] = i \hbar \epsilon_{ijk} \hat{S}_k.
+\]
+
+Dla spinu \(s\) (np. \(s = \frac{1}{2}\) dla elektronu), własne wartości operatorów \(\hat{S}^2\) i \(\hat{S}_z\) są:
+
+\[
+\hat{S}^2 |s, m_s\rangle = \hbar^2 s(s+1) |s, m_s\rangle, \quad \hat{S}_z |s, m_s\rangle = \hbar m_s |s, m_s\rangle,
+\]
+
+gdzie \(m_s = -s, -s+1, \ldots, s\).
+
+Własne funkcje momentu pędu i spinu tworzą bazę przestrzeni stanów kwantowych, na której można opisywać stan cząstki z uwzględnieniem zarówno ruchu orbitalnego, jak i spinu.
 
 \subsection{Atom wodoru: stany własne oraz energie własne}
 
-odpowiedź
+
+Atom wodoru opisuje równanie Schrödingera z potencjałem Coulomba:
+
+\[
+\hat{H} = -\frac{\hbar^2}{2m} \nabla^2 - \frac{e^2}{4 \pi \varepsilon_0 r},
+\]
+
+gdzie \(m\) to masa elektronu, \(e\) ładunek elementarny, a \(r\) odległość elektronu od jądra.
+
+Stany własne \(|n, l, m\rangle\) są jednocześnie własnymi funkcjami operatorów:
+
+\[
+\hat{H}|n, l, m\rangle = E_n |n, l, m\rangle,
+\]
+
+\[
+\hat{L}^2 |n, l, m\rangle = \hbar^2 l(l+1) |n, l, m\rangle,
+\]
+
+\[
+\hat{L}_z |n, l, m\rangle = \hbar m |n, l, m\rangle,
+\]
+
+gdzie liczby kwantowe przyjmują wartości
+
+\[
+n = 1, 2, 3, \ldots, \quad l = 0, 1, \ldots, n-1, \quad m = -l, -l+1, \ldots, l.
+\]
+
+Energia własna jest określona wzorem:
+
+\[
+E_n = - \frac{m e^4}{2 (4 \pi \varepsilon_0)^2 \hbar^2} \frac{1}{n^2} = - \frac{13.6\,\mathrm{eV}}{n^2}.
+\]
+
+Energia zależy wyłącznie od głównej liczby kwantowej \(n\), co prowadzi do degeneracji poziomów energetycznych względem liczb \(l\) i \(m\).
 
 \subsection{Własności funkcji falowych bozonów oraz fermionów}
 
-odpowiedź
+
+W mechanice kwantowej funkcje falowe bozonów i fermionów różnią się symetrią względem zamiany dwóch identycznych cząstek:
+
+\begin{itemize}
+    \item \textbf{Bozony} mają symetryczne funkcje falowe, tzn. przy zamianie cząstek
+    \[
+    \Psi(\ldots, \mathbf{r}_i, \ldots, \mathbf{r}_j, \ldots) = + \Psi(\ldots, \mathbf{r}_j, \ldots, \mathbf{r}_i, \ldots).
+    \]
+    
+    \item \textbf{Fermiony} mają antysymetryczne funkcje falowe, tzn.
+    \[
+    \Psi(\ldots, \mathbf{r}_i, \ldots, \mathbf{r}_j, \ldots) = - \Psi(\ldots, \mathbf{r}_j, \ldots, \mathbf{r}_i, \ldots).
+    \]
+\end{itemize}
+
+Antysymetria funkcji falowej fermionów prowadzi do zasady Pauliego wykluczania, która zabrania zajmowania tego samego stanu kwantowego przez dwie identyczne fermiony.
+
+Symetria funkcji falowej bozonów pozwala na zajmowanie tego samego stanu kwantowego przez wiele cząstek, co jest podstawą efektów takich jak kondensacja Bosego-Einsteina.
