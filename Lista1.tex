@@ -48,27 +48,60 @@ odpowiedź
 
 \subsection{Co to jest operator unitarny?}
 
-odpowiedź
+Operator liniowy w przestrzeni Hilberta, który zachowuje iloczyn skalarny.
 
 \subsection{Jak transformacje unitarne zachowują prawdopodobieństwo?}
 
-odpowiedź
+Transformacja unitarna $U$ spełnia $U^\dagger U = I$, więc zachowuje iloczyn skalarny:
+\[
+\langle \psi | \psi \rangle
+\;\xrightarrow{\,U\,}\;
+\langle \psi | U^\dagger U | \psi \rangle
+= \langle \psi | \psi \rangle.
+\]
+
+Ponieważ norma wektora stanu (a więc suma wszystkich prawdopodobieństw) pozostaje $1$, każda amplituda przejścia 
+$|\langle \phi | \psi \rangle|^{2}$ również się nie zmienia – stąd prawdopodobieństwa są zachowane.
 
 \subsection{Wyjaśnij ewolucję czasową za pomocą operatora ewolucji.}
 
-odpowiedź
+Ewolucja czasowa stanu układu kwantowego \(\lvert \psi(t) \rangle\) jest opisywana przez operator ewolucji \(U(t_{2},t_{1})\), który propaguje stan z czasu \(t_{1}\) do \(t_{2}\), zgodnie z zależnością
+\[
+\lvert \psi(t+\Delta t) \rangle \;=\; U\bigl(t+\Delta t,\,t\bigr)\,\lvert \psi(t) \rangle.
+\]
 
 \subsection{Wyjaśnij pojęcie stanów stacjonarnych.}
 
-odpowiedź
+Stany stacjonarne to rozwiązania równania Schrödingera, w których funkcja falowa może być rozdzielona na część zależną od współrzędnych przestrzennych oraz część zależną od czasu,
+\[
+\Psi(\vec r, t) = \psi(\vec r)\,f(t)
+\]
+i opisują dozwolone poziomy energetyczne układu.
 
 \subsection{Czym jest pakiet falowy?}
 
-odpowiedź
+Pakiet falowy to zbiór fal, który można opisać funkcją falową \(\Psi(x,t)\) w postaci całki po różnych pędach:
+\[
+\Psi(x,t)\;=\;\int_{-\infty}^{\infty}\!\phi(p_x)\,e^{\tfrac{i}{\hbar}(p_x x - E t)}\,\mathrm{d}p_x,
+\]
+gdzie \(\phi(p_x)\) jest funkcją określającą kształt pakietu falowego.  
+Przykładem jest pakiet Gaussowski, dla którego \(\phi(p_x)\) ma kształt funkcji Gaussa.
 
 \subsection{Co oznacza transformacja Fouriera funkcji falowej i jakie ma znaczenie fizyczne?}
 
-odpowiedź
+Transformacja Fouriera funkcji falowej pozwala na przejście z reprezentacji w przestrzeni położenia \(\Psi(x,0)\) do reprezentacji w przestrzeni pędu \(\phi(p_x)\) i odwrotnie, co umożliwia jednoczesne opisanie stanu cząstki zarówno w kategoriach położenia, jak i pędu:
+\[
+\phi(p_x)
+=\frac{1}{\sqrt{2\pi\hbar}}
+\int_{-\infty}^{\infty}
+\Psi(x,0)\,e^{-\frac{i}{\hbar}p_x x}\,\mathrm{d}x,
+\]
+\[
+\Psi(x,0)
+=\frac{1}{\sqrt{2\pi\hbar}}
+\int_{-\infty}^{\infty}
+\phi(p_x)\,e^{\frac{i}{\hbar}p_x x}\,\mathrm{d}p_x.
+\]
 
 \subsection{Wyjaśnij zjawisko tunelowania kwantowego.}
 
