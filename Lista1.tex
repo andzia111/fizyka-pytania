@@ -96,27 +96,57 @@ odpowiedź
 
 \subsection{Jakie są wartości własne $L^2$ i $L_z$?}
 
-odpowiedź
+\begin{align*}
+L^2 Y_{lm} &= \hbar^2 l(l+1) Y_{lm}, \\
+L_z Y_{lm} &= \hbar m Y_{lm},
+\end{align*}
+gdzie:
+\begin{itemize}
+  \item \( Y_{lm}(\theta, \phi) \) -- sferyczna funkcja harmoniczna,
+  \item \( \hbar \) -- zredukowana stała Plancka, \( \hbar = \frac{h}{2\pi} \),
+  \item \( l \in \{0, 1, 2, \ldots\} \) -- główna (orbitalna) liczba kwantowa,
+  \item \( m \in \{-l, -l+1, \ldots, l\} \) -- magnetyczna liczba kwantowa.
+\end{itemize}
 
 \subsection{Jaki jest związek między funkcjami $Y_{lm}$ a momentem pędu?}
 
-odpowiedź
+Funkcje \( Y_{lm}(\theta, \phi) \) to sferyczne funkcje harmoniczne. Są funkcjami własnymi operatorów momentu pędu. Funkcje \( Y_{lm} \) opisują część kątową funkcji falowej w układach sferycznie symetrycznych, np. w atomie wodoru.
 
 \subsection{Co to jest obrót w przestrzeni i jak działa na funkcje falowe?}
 
-odpowiedź
+Obrót w przestrzeni to transformacja układu współrzędnych (lub funkcji) polegająca na obróceniu obiektów względem punktu (zwykle początku układu współrzędnych) o pewien kąt wokół wybranej osi. Stan układu opisuje funkcja falowa $\psi(\vec{r})$. Obrót przestrzeni wpływa na sposób, w jaki ta funkcja jest rozłożona w przestrzeni.
 
 \subsection{Co to jest moment własny (spin)?}
 
-odpowiedź
+Moment własny, czyli \textbf{spin}, to wewnętrzna, kwantowa forma momentu pędu cząstki. Spin jest cechą wrodzoną cząstki i nie wynika z jej ruchu w przestrzeni. Opisywany jest operatorem $\vec{S}$. Na przykład cząstka w eksperymencie Sterna-Gerlacha ma spin \( s = 1 \), więc może przyjmować trzy stany spinu: \( m_s = -1, 0, +1 \).
 
 \subsection{Jakie są wartości dozwolone dla spinu cząstki?}
 
-odpowiedź
+Spin cząstki, może przyjmować wartości:
+\[
+s \in \left\{ 0, \tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \dots \right\}.
+\]
 
 \subsection{Czym są macierze Pauliego?}
 
-odpowiedź
+Macierze Pauliego to zestaw trzech specjalnych macierzy \( 2 \times 2 \), oznaczanych zwyczajowo jako \( \sigma_x \), \( \sigma_y \) oraz \( \sigma_z \). Stanowią one podstawę do opisu operatorów spinu dla cząstek o spinie \( \frac{1}{2} \). Mają postać:
+
+\[
+\sigma_x = \begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}, \quad
+\sigma_y = \begin{pmatrix}
+0 & -i \\
+i & 0
+\end{pmatrix}, \quad
+\sigma_z = \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}.
+\]
+
+Pozwalają na opis stanów spinu i ich transformacji, m.in. w eksperymentach Stern-Gerlacha czy przy analizie obrotów kwantowych.
 
 \subsection{Zdefiniuj operator spinowy $S$.}
 
